@@ -5,10 +5,18 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header bg-secondary">
+                    <div class="card-header bg-warning">
 
-                        <div class="text-white">Gåturer (Fjelleven)
-                            <div class="float-right">🤍 0</div>
+                        <div>
+                            <span>Gåturer</span>
+                            <div class="float-right">♡</div>
+                            {{-- <div class="float-right">♥</div> --}}
+
+                            <br>
+
+                            <tt>Fjelleven</tt>
+                            <div class="float-right">/////</div>
+
                         </div>
 
                     </div>
