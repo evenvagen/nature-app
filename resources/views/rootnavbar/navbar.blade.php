@@ -8,7 +8,12 @@
             <a class="navbar-brand" href="{{ url('/') }}">
                 <tt>N✾TURE</tt>
             </a>
-
+            @if (Auth::check())
+                <form class="form-inline my-2 my-lg-0 ml-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Søk" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Søk</button>
+                </form>
+            @endif
 
             <ul class="navbar-nav ml-auto">
                 @guest
@@ -33,7 +38,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         document.getElementById('logout-form').submit();">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
