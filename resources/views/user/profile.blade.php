@@ -8,17 +8,29 @@
 
 
         <div class="row">
-            @for ($i = 0; $i < 3; $i++)
-                <div class="col-sm-4">
+            @foreach ($themes as $theme)
+                <div class="col-sm-6">
+
                     <div class="card mb-2 bg-warning">
-                        <h3 class="text-center">Collection</h3>
-                        <img src={{ asset('userpics/Desertdan/polarørken/goldensky.jpeg') }} alt="vealøs">
-                        <p>
-                            Bilder av polarørkenen fra områder omkring nordpolen
-                        </p>
+
+                        <div class="card-header bg-warning">
+                            <span> {{ $theme->title }}</span>
+                            <div class="float-right"> Følg +</div>
+
+                            <br>
+
+                            <tt>{{ $theme->description }}</tt>
+                            <div class="float-right">Se mer</div>
+                        </div>
+
+                        <img src={{ asset($theme->img_teaser) }} alt="vealøs">
+
                     </div>
+
+
+
                 </div>
-            @endfor
+            @endforeach
         </div>
 
     </div>

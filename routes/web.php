@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ThemeController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -9,7 +11,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::view('/profile', 'user.profile')->name('user.profile');
+Route::get('/profile', [ThemeController::class, 'index'])->name('user.profile');
 Route::view('/messages', 'user.messages')->name('user.messages');
