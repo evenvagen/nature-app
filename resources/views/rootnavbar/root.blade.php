@@ -23,7 +23,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-<body style="background-color: lightgrey;">
+<body style="background-color: rgb(25, 25, 25);">
     <div id="app">
 
         @yield('navbar')

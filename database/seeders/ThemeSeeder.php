@@ -14,6 +14,9 @@ class ThemeSeeder extends Seeder
      */
     public function run()
     {
+
+        //Fjelleven
+
         Theme::firstOrCreate([
             'user_id' => 1,
             'title' => 'Gåturer',
@@ -26,6 +29,15 @@ class ThemeSeeder extends Seeder
             'title' => 'Topper',
             'description' => 'Bilder fra topper i Grenland',
             'img_teaser' => 'userpics/Fjelleven/topper/blåfjelltopp.jpeg'
+        ]);
+
+        //Hydrohannah
+
+        Theme::firstOrCreate([
+            'user_id' => 4,
+            'title' => 'Stillehavet',
+            'description' => 'Bilder av dyr fra stillehavet',
+            'img_teaser' => 'userpics/Hydrohannah/stillehavet/penguin.png'
         ]);
     }
 }
