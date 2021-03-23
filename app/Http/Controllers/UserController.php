@@ -15,6 +15,6 @@ class UserController extends Controller
 
         $themes = Theme::where('user_id', $user->id)->get();
 
-        return view('user.profile', compact(['themes']));
+        return view('user.profile', compact(['themes', 'user']));
     }
 }

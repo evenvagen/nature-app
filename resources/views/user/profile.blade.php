@@ -2,10 +2,14 @@
 
 @section('content')
 
-
+    <div class="jumbotron text-center text-warning" style="background-color: rgb(25, 25, 25)">
+        <h1>{{ $user->name }}</h1>
+        <tt>2 følgere</tt>
+        <tt>|</tt>
+        <tt>følger 3</tt>
+    </div>
 
     <div class="container">
-
 
         <div class="row">
             @foreach ($themes as $theme)
@@ -15,7 +19,7 @@
 
                         <div class="card-header bg-warning">
                             <span> {{ $theme->title }}</span>
-                            <div class="float-right"> Følg +</div>
+                            <div class="float-right"> // Følg +</div>
 
                             <br>
 
