@@ -7,6 +7,11 @@
         <tt>2 følgere</tt>
         <tt>|</tt>
         <tt>følger 3</tt>
+
+        <br>
+
+        <tt>Følg</tt>
+
     </div>
 
     <div class="container">
@@ -19,12 +24,11 @@
 
                         <div class="card-header bg-warning">
                             <span> {{ $theme->title }}</span>
-                            <div class="float-right"> // Følg +</div>
+                            <div class="float-right">Følg +</div>
 
                             <br>
 
                             <tt>{{ $theme->description }}</tt>
-                            <div class="float-right">Se mer</div>
                         </div>
 
                         <img src={{ asset($theme->img_teaser) }} alt="vealøs">
