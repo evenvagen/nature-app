@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Follower;
 use Illuminate\Http\Request;
 use App\Models\Theme;
 use Illuminate\Support\Facades\Auth;
@@ -14,17 +15,23 @@ class UserController extends Controller
 
         $user = Auth::user();
 
+        $followers = count(Follower::where('follow_id', $user->id)->get());
+        $following = count(Follower::where('user_id', $user->id)->get());
+
         $themes = Theme::where('user_id', $user->id)->get();
 
-        return view('user.profile', compact(['themes', 'user']));
+        return view('user.profile', compact(['themes', 'user', 'followers', 'following']));
     }
 
     public function show($id)
     {
         $user = User::find($id);
 
+        $followers = count(Follower::where('follow_id', $user->id)->get());
+        $following = count(Follower::where('user_id', $user->id)->get());
+
         $themes = Theme::where('user_id', $user->id)->get();
 
-        return view('user.visitprofile', compact(['user', 'themes']));
+        return view('user.visitprofile', compact(['user', 'themes', 'followers', 'following']));
     }
 }

@@ -5,9 +5,9 @@
     <div class="jumbotron text-center text-warning" style="background-color: rgb(25, 25, 25)">
         <h1>{{ $user->name }}</h1>
 
-        <tt>2 følgere</tt>
+        <tt> {{ $followers }} følgere</tt>
         <tt>|</tt>
-        <tt>følger 3</tt>
+        <tt>følger {{ $following }}</tt>
 
         <br>
 
