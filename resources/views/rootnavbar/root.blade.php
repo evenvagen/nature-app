@@ -21,6 +21,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    @livewireStyles
 </head>
 
 <body style="background-color: rgb(25, 25, 25);">
@@ -29,6 +31,8 @@
         @yield('navbar')
 
     </div>
+
+    @livewireScripts
 </body>
 
 </html>

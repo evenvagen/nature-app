@@ -10,7 +10,7 @@
 
         <br>
 
-        <tt>Følg</tt>
+        <livewire:followprofile />
 
     </div>
 
