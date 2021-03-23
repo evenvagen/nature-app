@@ -7,10 +7,5 @@ use App\Models\Theme;
 
 class ThemeController extends Controller
 {
-    public function index()
-    {
-        $themes = Theme::all();
-
-        return view('user.profile', compact(['themes']));
-    }
+    //
 }
