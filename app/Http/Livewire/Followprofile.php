@@ -16,7 +16,7 @@ class Followprofile extends Component
 
     public function follow()
     {
-        $this->status = 'følger';
+        $this->status = 'avfølg';
     }
 
     public function render()
