@@ -17,3 +17,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profile/{id}', [UserController::class, 'show'])->name('user.visitprofile');
 Route::get('/profile', [UserController::class, 'profile'])->name('user.profile');
 Route::view('/messages', 'user.messages')->name('user.messages');
+
+Route::get('/livewire', function () {
+    return view('livewire-fun');
+});
