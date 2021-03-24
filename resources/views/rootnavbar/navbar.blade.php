@@ -41,7 +41,7 @@
 
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 document.getElementById('logout-form').submit();">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
@@ -55,11 +55,6 @@
 
                     </li>
                 </ul>
-
-                <a class="navbar-brand ml-4" href="{{ url('/messages') }}">
-                    ∆
-                </a>
-
 
 
             @endguest
