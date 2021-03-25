@@ -27,11 +27,8 @@ class UserController extends Controller
     {
         $user = User::find($id);
 
-        $followers = count(Follower::where('follow_id', $user->id)->get());
-        $following = count(Follower::where('user_id', $user->id)->get());
-
         $themes = Theme::where('user_id', $user->id)->get();
 
-        return view('user.visitprofile', compact(['user', 'themes', 'followers', 'following']));
+        return view('user.visitprofile', compact(['user', 'themes']));
     }
 }
