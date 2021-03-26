@@ -2,6 +2,8 @@
 
 @section('content')
 
+    <br>
+
     @foreach ($posts as $post)
 
         <div class="container">
