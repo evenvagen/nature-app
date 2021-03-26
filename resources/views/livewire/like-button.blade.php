@@ -1,1 +1,3 @@
-<h4 wire:click="like" class="float-right text-danger font-size">{{ $heart }}</h4>
+<div wire:click="like" class="float-right text-danger" style="font-size: 17px;">
+    {{ $heart }} {{ $count }}
+</div>
