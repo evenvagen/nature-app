@@ -10,4 +10,10 @@ class Post extends Model
     use HasFactory;
 
     protected $fillable = ['theme_id', 'img_url', 'description', 'created_at', 'updated_at'];
+
+
+    public function theme()
+    {
+        return $this->belongsTo(Theme::class);
+    }
 }
