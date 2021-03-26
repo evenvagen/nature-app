@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card bg-warning">
                     <div class="card-header bg-warning">Logg inn</div>
 
                     <div class="card-body bg-dark text-white">
