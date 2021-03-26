@@ -11,8 +11,12 @@
                         <div class="card-header bg-warning">
 
                             <div>
-                                <span><b>{{ $post->theme->user->name }}</b></span>
+                                <a href="{{ route('user.visitprofile', $post->theme->user->id) }}" class="text-dark">
+                                    <b>{{ $post->theme->user->name }}</b>
+                                </a>
                                 <div class="float-right">♡</div>
+
+
                                 {{-- <div class="float-right">♥</div> --}}
 
                                 <br>
