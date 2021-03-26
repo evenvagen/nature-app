@@ -10,7 +10,7 @@
             </a>
             @if (Auth::check())
                 <form class="form-inline my-2 my-lg-0 ml-3">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Søk" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Søk" aria-label="Search" disabled>
                     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Søk</button>
                 </form>
             @endif
@@ -41,7 +41,7 @@
 
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         document.getElementById('logout-form').submit();">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 

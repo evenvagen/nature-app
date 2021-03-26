@@ -14,10 +14,8 @@
                                 <a href="{{ route('user.visitprofile', $post->theme->user->id) }}" class="text-dark">
                                     <b>{{ $post->theme->user->name }}</b>
                                 </a>
-                                <div class="float-right">♡</div>
 
-
-                                {{-- <div class="float-right">♥</div> --}}
+                                <livewire:like-button />
 
                                 <br>
 
